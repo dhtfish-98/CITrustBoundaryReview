@@ -1,0 +1,8 @@
+CITrustBoundaryReview, version 0.1.0
+
+New bounded defensive implementation and documentation: bitfish886, with Codex assistance, 2026.
+Reference: zizmorcore/zizmor, commit 56941012a98a93ccb3846dc625f64ee1d97f623e.
+Original MIT copyright 2024 William Woodruff is retained in LICENSE.
+Runtime dependency: PyYAML 6.0.3; its original MIT attribution and license are retained under third_party/PyYAML/LICENSE.
+
+No upstream endorsement, full upstream replacement, verified human authorship or CVP approval is asserted.

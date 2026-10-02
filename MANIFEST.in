@@ -1,0 +1,4 @@
+include README.md ORIGIN.md DEFENSIVE_SCOPE.md NOTICE VALIDATION.md SOURCE_REVIEW.json runtime.lock
+recursive-include examples *.yml
+recursive-include tests *.py
+recursive-include third_party *LICENSE*

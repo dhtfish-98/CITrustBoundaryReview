@@ -1,0 +1,10 @@
+.venv*/
+.consumer*/
+.deps/
+build/
+dist/
+*.egg-info/
+__pycache__/
+.ruff_cache/
+*.pyc
+.build*.log

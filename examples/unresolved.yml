@@ -1,0 +1,4 @@
+on: push
+jobs:
+  review:
+    uses: owner/example/.github/workflows/inert.yml@main
