@@ -118,8 +118,17 @@ def parse_yaml(data, limits):
 
 
 def read_local(path, limits):
-    if os.name != "posix" or any(
-        not hasattr(os, f) for f in ("O_NOFOLLOW", "O_DIRECTORY", "O_NONBLOCK", "O_CLOEXEC")
+    required = ("O_NOFOLLOW", "O_DIRECTORY", "O_NONBLOCK", "O_CLOEXEC")
+    directory_capabilities = getattr(os, "supports_dir_fd", None)
+    directory_relative_open = (
+        isinstance(directory_capabilities, (set, frozenset)) and os.open in directory_capabilities
+    )
+    if (
+        os.name != "posix"
+        or any(
+            type(getattr(os, flag, None)) is not int or getattr(os, flag) <= 0 for flag in required
+        )
+        or not directory_relative_open
     ):
         raise OpenInput("unsupported_platform")
     if not isinstance(path, str) or not path or "\0" in path or ".." in path.split("/"):

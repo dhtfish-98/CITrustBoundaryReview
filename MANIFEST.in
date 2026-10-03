@@ -2,3 +2,31 @@ include README.md ORIGIN.md DEFENSIVE_SCOPE.md NOTICE VALIDATION.md SOURCE_REVIE
 recursive-include examples *.yml
 recursive-include tests *.py
 recursive-include third_party *LICENSE*
+
+# Current formal source inventory, including provenance and tests.
+include .github/workflows/verify.yml
+include .gitignore
+include DEFENSIVE_SCOPE.md
+include LICENSE
+include NOTICE
+include ORIGIN.md
+include README.md
+include SOURCE_REVIEW.json
+include SOURCE_REVIEW_MANIFEST.json
+include VALIDATION.md
+include examples/data-only.yml
+include examples/static-boundary.yml
+include examples/unresolved.yml
+include pyproject.toml
+include runtime.lock
+include src/ci_trust_boundary_review/__init__.py
+include src/ci_trust_boundary_review/__main__.py
+include src/ci_trust_boundary_review/cli.py
+include src/ci_trust_boundary_review/contracts.py
+include src/ci_trust_boundary_review/expressions.py
+include src/ci_trust_boundary_review/input.py
+include src/ci_trust_boundary_review/review.py
+include src/ci_trust_boundary_review/shell.py
+include tests/test_review.py
+include third_party/PyYAML/LICENSE
+include tests/test_reader_capabilities.py

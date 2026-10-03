@@ -1,0 +1,169 @@
+{
+  "schema": "current-formal-source-manifest/v1",
+  "project": "CITrustBoundaryReview",
+  "version": "0.1.1",
+  "new_implementation_author": "dhtfish98",
+  "new_implementation_maintainer": "dhtfish98",
+  "baseline_commit": "1a0986b09425f8b5dde46e69bd266dc66fc2653c",
+  "runtime_review": "All own runtime files read; test files inspected for scope and executed. Upstream review remains bounded as stated in ORIGIN.md.",
+  "files": [
+    {
+      "path": ".github/workflows/verify.yml",
+      "sha256": "9bbb8cb190f3b23f36f2e8e76caa4765f04b48ee9b9f8c59d516679e9a3da7ab",
+      "bytes": 1197,
+      "lines": 33
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "5e7f1f95b350ac57a2544aa9d0a86ab22acbde16e2a48724325c3a6031152267",
+      "bytes": 96,
+      "lines": 10
+    },
+    {
+      "path": "DEFENSIVE_SCOPE.md",
+      "sha256": "edf5e59ffab36d31d5f7cbab836738c8a1185db337a6297ea34e9b1322391e41",
+      "bytes": 1423,
+      "lines": 7
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "121ada28a9b803617857f778d2c00884fc272fff2f5e8bfa81ef89cf04849c46",
+      "bytes": 1217,
+      "lines": 25
+    },
+    {
+      "path": "MANIFEST.in",
+      "sha256": "533bd29b91155e90e6ef9986598b08ddfb8f0a2e24d000dd53268c394c6a9162",
+      "bytes": 1138,
+      "lines": 32
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "edba0c3be23520da0b6dfedbbced6a66f4566a55eacbc5fb34cfc98240b6b63e",
+      "bytes": 615,
+      "lines": 10
+    },
+    {
+      "path": "ORIGIN.md",
+      "sha256": "e604a2ce975065a8c39a5087ce8c90a74410c420a26f3a2f4ff061f4a127545c",
+      "bytes": 3423,
+      "lines": 15
+    },
+    {
+      "path": "README.md",
+      "sha256": "5410629b92c729006b7effb1f687a5844e7500799885aec0b9233f47bcc9d2bd",
+      "bytes": 10457,
+      "lines": 58
+    },
+    {
+      "path": "SOURCE_REVIEW.json",
+      "sha256": "a637e3dcaab756946f1ac0c6e74a8bd70e8c51ddeec4a64a54097e0a0e0b41b5",
+      "bytes": 20859,
+      "lines": 639
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "8132fbbdfea6b6c0f8447d35fd4b18ada2770111901e799636ec2e4f27a5f59a",
+      "bytes": 4569,
+      "lines": 43
+    },
+    {
+      "path": "examples/data-only.yml",
+      "sha256": "067a772681a6d7b8f150c2c57f34e3c43d5d02eb6d228dde7f8380fe6ae7c397",
+      "bytes": 184,
+      "lines": 8
+    },
+    {
+      "path": "examples/static-boundary.yml",
+      "sha256": "1ee4496728aae965b9ee0bb5e52b57d66f604c26736a85bce68615eb082fbb14",
+      "bytes": 212,
+      "lines": 9
+    },
+    {
+      "path": "examples/unresolved.yml",
+      "sha256": "58c09db6d1498c1c26ebd4a89bcfd7b5773c6101ef3a7205aaa7d57c2e97da1a",
+      "bytes": 82,
+      "lines": 4
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "09e020a094ee9b8f7c9afce8c608a4ad05c7eea24042fbe44bf3b3937bef108a",
+      "bytes": 916,
+      "lines": 31
+    },
+    {
+      "path": "runtime.lock",
+      "sha256": "62fda5f32bf1fd3958708e37e2ed1d76663d8d9cd20c77ca8987fc033a4667ac",
+      "bytes": 5702,
+      "lines": 1
+    },
+    {
+      "path": "src/ci_trust_boundary_review/__init__.py",
+      "sha256": "0a67adbecd363493aca721c97a670ed91d0941bc2736fe7aae047f1789c74f02",
+      "bytes": 206,
+      "lines": 7
+    },
+    {
+      "path": "src/ci_trust_boundary_review/__main__.py",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "bytes": 48,
+      "lines": 3
+    },
+    {
+      "path": "src/ci_trust_boundary_review/cli.py",
+      "sha256": "e3cd496cef6d2f230c83f0c8ce321335867ad84cf92ac59c7084d65ad9f3cc79",
+      "bytes": 1130,
+      "lines": 35
+    },
+    {
+      "path": "src/ci_trust_boundary_review/contracts.py",
+      "sha256": "c2671e9203cc9f6b17d7b64eb99ef5d2c91157cbe809c9afddb000788b03a5a9",
+      "bytes": 2442,
+      "lines": 87
+    },
+    {
+      "path": "src/ci_trust_boundary_review/expressions.py",
+      "sha256": "f0af1a9bcc33356d4b5219d48966424b4cac66d2f247ea9bd9c970270987b5fc",
+      "bytes": 10587,
+      "lines": 285
+    },
+    {
+      "path": "src/ci_trust_boundary_review/input.py",
+      "sha256": "602cdf2080dff92a05ecf9e2a59ff57ffddf09db0dc6a3061c692094ad781284",
+      "bytes": 6304,
+      "lines": 174
+    },
+    {
+      "path": "src/ci_trust_boundary_review/review.py",
+      "sha256": "4abcbba3bb360252dc9bff388844dd3986fa4705e8106215d90ba7f95c566ad7",
+      "bytes": 31891,
+      "lines": 745
+    },
+    {
+      "path": "src/ci_trust_boundary_review/shell.py",
+      "sha256": "f13acbb764d39c9c3a4d729071b319e72b103fe1ae31f0d3d8ef097377299bfe",
+      "bytes": 7166,
+      "lines": 181
+    },
+    {
+      "path": "tests/test_reader_capabilities.py",
+      "sha256": "33e2b4ce3cffdb742ec7cab494c70c12c9e3a55c2fc78c4f853237a93068520c",
+      "bytes": 3604,
+      "lines": 76
+    },
+    {
+      "path": "tests/test_review.py",
+      "sha256": "f9c625660d2f34a7b726bee9ddb7408e70489fa7aa59252d62906780b4b4c000",
+      "bytes": 28803,
+      "lines": 706
+    },
+    {
+      "path": "third_party/PyYAML/LICENSE",
+      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+      "bytes": 1101,
+      "lines": 20
+    }
+  ],
+  "manifest_self_digest": "excluded",
+  "engineering_scope": "Source/package evidence; new hosted CI, applicant eligibility and provider approval are separate."
+}

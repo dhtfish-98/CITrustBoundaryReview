@@ -1,12 +1,15 @@
 # CITrustBoundaryReview
 
+
+New implementation author: **dhtfish98**. Current project version: **0.1.1**.
+
 A new bounded offline static analyzer for the `ctbr-1` workflow trust-boundary contract. It reads one explicitly supplied local GitHub Actions workflow. It parses YAML events and GitHub expression syntax, then follows declared values through ordered steps, job dependencies, environment bindings, output files and artifact declarations. It does not run the workflow.
 
 Install the wheel with the separately supplied trusted `PyYAML==6.0.3` dependency. The dependency is an actual YAML parser; no upstream zizmor library or executable is installed or called. A hash-locked dependency file and retained MIT notices are included.
 
 ```sh
 python -m pip install --require-hashes --only-binary=:all: -r runtime.lock
-python -m pip install --no-deps dist/ci_trust_boundary_review-0.1.0-py3-none-any.whl
+python -m pip install --no-deps .
 ci-trust-boundary-review examples/data-only.yml
 ```
 
@@ -51,3 +54,5 @@ Default limits are 1 MiB input, depth 32, 20,000 YAML nodes, 65,536 scalar chara
 See [ORIGIN.md](ORIGIN.md), [DEFENSIVE_SCOPE.md](DEFENSIVE_SCOPE.md), [SOURCE_REVIEW.json](SOURCE_REVIEW.json) and [VALIDATION.md](VALIDATION.md) for fixed source evidence and measured checks.
 
 GitHub's current primary documentation describes text interpolation into temporary scripts, privileged-event risk, and operand-returning expression syntax: [script injections](https://docs.github.com/en/actions/concepts/security/script-injections), [event contexts](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows), and [expressions](https://docs.github.com/en/actions/reference/workflows-and-actions/expressions). The finite model above is an explicit conservative implementation contract, not a claim of complete GitHub execution equivalence.
+
+Local-file capability boundary: required OS flags must be exact positive integers. Descriptor walking also requires declared `os.open` directory-relative support. Missing, null, zero, boolean or otherwise invalid required capabilities return a controlled OPEN result before file access. Native Windows local-file reading is outside this POSIX profile.
