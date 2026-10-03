@@ -6,11 +6,11 @@ build-backend = "setuptools.build_meta"
 name = "ci-trust-boundary-review"
 version = "0.1.2"
 description = "Bounded offline static review of workflow input and execution trust boundaries"
-readme = "README.md"
+readme = "项目文档/README.md"
 requires-python = ">=3.11"
 dependencies = ["PyYAML==6.0.3"]
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["项目文档/LICENSE"]
 authors = [{name = "dhtfish98"}]
 maintainers = [{name = "dhtfish98"}]
 
@@ -21,7 +21,7 @@ ci-trust-boundary-review = "ci_trust_boundary_review.cli:main"
 where = ["src"]
 
 [tool.setuptools.data-files]
-"share/ci-trust-boundary-review" = ["README.md", "ORIGIN.md", "DEFENSIVE_SCOPE.md", "NOTICE", "VALIDATION.md", "SOURCE_REVIEW.json", "runtime.lock", "SOURCE_REVIEW_MANIFEST.json"]
+"share/ci-trust-boundary-review" = ["项目文档/README.md", "项目文档/ORIGIN.md", "项目文档/DEFENSIVE_SCOPE.md", "项目文档/NOTICE", "项目文档/VALIDATION.md", "SOURCE_REVIEW.json", "runtime.lock", "SOURCE_REVIEW_MANIFEST.json"]
 
 [tool.ruff]
 line-length = 100

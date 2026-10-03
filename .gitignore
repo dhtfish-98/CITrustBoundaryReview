@@ -8,3 +8,10 @@ __pycache__/
 .ruff_cache/
 *.pyc
 .build*.log
+
+# All generated build outputs and staging are local.
+!/Build/
+/Build/*
+!/Build/.gitignore
+__pycache__/
+*.py[cod]
