@@ -1,11 +1,11 @@
 # CITrustBoundaryReview
 
 
-New implementation author: **dhtfish98**. Current project version: **0.1.1**.
+New implementation author: **dhtfish98**. Current project version: **0.1.2**.
 
 A new bounded offline static analyzer for the `ctbr-1` workflow trust-boundary contract. It reads one explicitly supplied local GitHub Actions workflow. It parses YAML events and GitHub expression syntax, then follows declared values through ordered steps, job dependencies, environment bindings, output files and artifact declarations. It does not run the workflow.
 
-Install the wheel with the separately supplied trusted `PyYAML==6.0.3` dependency. The dependency is an actual YAML parser; no upstream zizmor library or executable is installed or called. A hash-locked dependency file and retained MIT notices are included.
+Install the wheel with the separately supplied trusted `PyYAML==6.0.3` dependency. The dependency is an actual YAML parser; no upstream zizmor library or executable is installed or called. The hash-locked dependency file is included; PyYAML retains its MIT notices in its separately installed distribution. The retained zizmor MIT notice applies to the explicitly unresolved capability-selection provenance, not to vendored Rust runtime.
 
 ```sh
 python -m pip install --require-hashes --only-binary=:all: -r runtime.lock

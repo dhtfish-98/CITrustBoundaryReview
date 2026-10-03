@@ -1,11 +1,11 @@
 {
   "schema": "current-formal-source-manifest/v1",
   "project": "CITrustBoundaryReview",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "new_implementation_author": "dhtfish98",
   "new_implementation_maintainer": "dhtfish98",
-  "baseline_commit": "1a0986b09425f8b5dde46e69bd266dc66fc2653c",
-  "runtime_review": "All own runtime files read; test files inspected for scope and executed. Upstream review remains bounded as stated in ORIGIN.md.",
+  "baseline_commit": "89c99fe35ba1689d62adb5120f86b61da0233109",
+  "runtime_review": "Own runtime unchanged except existing version metadata; current source/package inventories and required notice bytes checked. Upstream read scope remains bounded in ORIGIN.md.",
   "files": [
     {
       "path": ".github/workflows/verify.yml",
@@ -33,26 +33,26 @@
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "533bd29b91155e90e6ef9986598b08ddfb8f0a2e24d000dd53268c394c6a9162",
-      "bytes": 1138,
-      "lines": 32
+      "sha256": "439fe3341ebef4bfc8c5726e9cb294f103c883abadf86e63b82fdf5a308ee5f8",
+      "bytes": 1103,
+      "lines": 31
     },
     {
       "path": "NOTICE",
-      "sha256": "edba0c3be23520da0b6dfedbbced6a66f4566a55eacbc5fb34cfc98240b6b63e",
-      "bytes": 615,
-      "lines": 10
+      "sha256": "341b9d1116d96b1194d30b4b7c0f8ab8d9ab33cd395eabea843b62bdd400bb3f",
+      "bytes": 673,
+      "lines": 11
     },
     {
       "path": "ORIGIN.md",
-      "sha256": "e604a2ce975065a8c39a5087ce8c90a74410c420a26f3a2f4ff061f4a127545c",
-      "bytes": 3423,
-      "lines": 15
+      "sha256": "28c9f75eac70df7cfd0874046b738c3829ae03df5a82cf1840c5da419b5efbbd",
+      "bytes": 3918,
+      "lines": 19
     },
     {
       "path": "README.md",
-      "sha256": "5410629b92c729006b7effb1f687a5844e7500799885aec0b9233f47bcc9d2bd",
-      "bytes": 10457,
+      "sha256": "d4c2b4a489b639236f8bdb1404239884c9d01190d031cd3207ee9f6920d6c836",
+      "bytes": 10637,
       "lines": 58
     },
     {
@@ -63,9 +63,9 @@
     },
     {
       "path": "VALIDATION.md",
-      "sha256": "8132fbbdfea6b6c0f8447d35fd4b18ada2770111901e799636ec2e4f27a5f59a",
-      "bytes": 4569,
-      "lines": 43
+      "sha256": "850de1473f4b3ba17fdb5c757264522a6754fdff4ae6ea55d04fe3cc2564efa0",
+      "bytes": 5774,
+      "lines": 55
     },
     {
       "path": "examples/data-only.yml",
@@ -87,8 +87,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "09e020a094ee9b8f7c9afce8c608a4ad05c7eea24042fbe44bf3b3937bef108a",
-      "bytes": 916,
+      "sha256": "636e5adcd9d41d5342865b32695aab66ae1f8b63e61f0d10c211049934ddfaf8",
+      "bytes": 886,
       "lines": 31
     },
     {
@@ -99,7 +99,7 @@
     },
     {
       "path": "src/ci_trust_boundary_review/__init__.py",
-      "sha256": "0a67adbecd363493aca721c97a670ed91d0941bc2736fe7aae047f1789c74f02",
+      "sha256": "9acb3a371a0e943c7f1de09f86d5a3df30d04d0fb6941ae0686f473fd6dce262",
       "bytes": 206,
       "lines": 7
     },
@@ -156,14 +156,8 @@
       "sha256": "f9c625660d2f34a7b726bee9ddb7408e70489fa7aa59252d62906780b4b4c000",
       "bytes": 28803,
       "lines": 706
-    },
-    {
-      "path": "third_party/PyYAML/LICENSE",
-      "sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
-      "bytes": 1101,
-      "lines": 20
     }
   ],
   "manifest_self_digest": "excluded",
-  "engineering_scope": "Source/package evidence; new hosted CI, applicant eligibility and provider approval are separate."
+  "engineering_scope": "Current local source/package evidence; exact-commit hosted CI and applicant/CVP approval are separate."
 }

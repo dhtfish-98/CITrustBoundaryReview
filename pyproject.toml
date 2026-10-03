@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ci-trust-boundary-review"
-version = "0.1.1"
+version = "0.1.2"
 description = "Bounded offline static review of workflow input and execution trust boundaries"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = ["PyYAML==6.0.3"]
 license = "MIT"
-license-files = ["LICENSE", "third_party/PyYAML/LICENSE"]
+license-files = ["LICENSE"]
 authors = [{name = "dhtfish98"}]
 maintainers = [{name = "dhtfish98"}]
 

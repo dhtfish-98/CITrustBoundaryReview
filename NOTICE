@@ -1,10 +1,11 @@
-CITrustBoundaryReview, version 0.1.1
+CITrustBoundaryReview 0.1.2
+New implementation copyright 2026 dhtfish98; author and maintainer: dhtfish98.
+New source is licensed under MIT.
 
-New bounded defensive implementation and documentation: dhtfish98, under repository-owner direction, 2026.
-Reference: zizmorcore/zizmor, commit 56941012a98a93ccb3846dc625f64ee1d97f623e.
-Original MIT copyright 2024 William Woodruff is retained in LICENSE.
-Runtime dependency: PyYAML 6.0.3; its original MIT attribution and license are retained under third_party/PyYAML/LICENSE.
-
-No upstream endorsement, full upstream replacement, verified human authorship or CVP approval is asserted.
-
-New implementation copyright 2026 dhtfish98. Original upstream notices above are retained.
+Fixed reference: zizmorcore/zizmor 56941012a98a93ccb3846dc625f64ee1d97f623e.
+The original 2024 William Woodruff copyright is retained in LICENSE because
+applicability to the reference-derived capability classification remains OPEN.
+No original Rust runtime or full source-capability CSV is distributed.
+PyYAML 6.0.3 is a separate external parser dependency, not vendored or rewritten.
+Its independently distributed package retains its own MIT notices.
+No upstream endorsement, unaided human authorship or CVP approval is asserted.

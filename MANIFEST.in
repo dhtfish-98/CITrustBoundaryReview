@@ -27,6 +27,5 @@ include src/ci_trust_boundary_review/expressions.py
 include src/ci_trust_boundary_review/input.py
 include src/ci_trust_boundary_review/review.py
 include src/ci_trust_boundary_review/shell.py
-include tests/test_review.py
-include third_party/PyYAML/LICENSE
 include tests/test_reader_capabilities.py
+include tests/test_review.py
