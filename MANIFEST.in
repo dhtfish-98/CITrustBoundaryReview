@@ -1,4 +1,4 @@
-include 项目文档/README.md 项目文档/ORIGIN.md 项目文档/DEFENSIVE_SCOPE.md 项目文档/NOTICE 项目文档/VALIDATION.md SOURCE_REVIEW.json runtime.lock
+include 项目文档/README.md 项目文档/ORIGIN.md 项目文档/DEFENSIVE_SCOPE.md 项目文档/NOTICE 项目文档/VALIDATION.md 项目文档/SOURCE_REVIEW.json runtime.lock
 recursive-include examples *.yml
 recursive-include tests *.py
 recursive-include third_party *LICENSE*
@@ -11,7 +11,7 @@ include 项目文档/LICENSE
 include 项目文档/NOTICE
 include 项目文档/ORIGIN.md
 include 项目文档/README.md
-include SOURCE_REVIEW.json
+include 项目文档/SOURCE_REVIEW.json
 include SOURCE_REVIEW_MANIFEST.json
 include 项目文档/VALIDATION.md
 include examples/data-only.yml

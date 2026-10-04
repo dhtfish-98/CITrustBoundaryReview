@@ -28,7 +28,12 @@
     {
       "original": "README.md",
       "stored": "项目文档/README.md",
-      "sha256": "c7c177bd9981af6ba9d80d7d3124c56c6894cf1ec6d462033ed6c88e23fb7ba0"
+      "sha256": "6d0a336b1c28b96f236de8ba010cf56d6513271d367c76b09b5aeae74717f049"
+    },
+    {
+      "original": "SOURCE_REVIEW.json",
+      "stored": "项目文档/SOURCE_REVIEW.json",
+      "sha256": "a637e3dcaab756946f1ac0c6e74a8bd70e8c51ddeec4a64a54097e0a0e0b41b5"
     },
     {
       "original": "VALIDATION.md",

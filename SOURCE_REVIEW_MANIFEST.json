@@ -11,25 +11,19 @@
       "path": ".github/workflows/verify.yml",
       "sha256": "48e9a9fda5ff1a918347b876c6acc32ce456f723c4d999a5761dc7889f22d07e",
       "bytes": 2518,
-      "lines": 33
+      "lines": 57
     },
     {
       "path": ".gitignore",
       "sha256": "682d35ba65c8e40a1cd7049c743e8bec515144d883ff7a77aa4173447e5700aa",
       "bytes": 210,
-      "lines": 10
+      "lines": 17
     },
     {
       "path": "MANIFEST.in",
-      "sha256": "3c48eb290936e62dc5cc0c692c50264a4c74010e4a5dd6bc6b05a4f1536c419a",
-      "bytes": 1729,
-      "lines": 31
-    },
-    {
-      "path": "SOURCE_REVIEW.json",
-      "sha256": "a637e3dcaab756946f1ac0c6e74a8bd70e8c51ddeec4a64a54097e0a0e0b41b5",
-      "bytes": 20859,
-      "lines": 639
+      "sha256": "b77aadc3bfebe7c2be385fa64be2bc4d1f19f0816c3b346f9952b1b8808e33a7",
+      "bytes": 1755,
+      "lines": 46
     },
     {
       "path": "examples/data-only.yml",
@@ -51,8 +45,8 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "9f9b897aeed9859f7d02caeb9a68cdb792313bc5cba41616a478b2c1bcfdd3af",
-      "bytes": 977,
+      "sha256": "8b36419d69d8c66cee3d0f169cffaa2d105729425933eac2e56c044fa81370fc",
+      "bytes": 990,
       "lines": 31
     },
     {
@@ -127,8 +121,8 @@
       "path": "构建.py"
     },
     {
-      "sha256": "3d43fe3ea8ca6563928f4bde3acdd6b894228731a97a38f3a8e4711f7fbc22f9",
-      "bytes": 1276,
+      "sha256": "bf0b5943bda2484097a8eddc53cd255d9de9a938cf7a79946694b141ebd9dfb2",
+      "bytes": 1463,
       "path": "构建配置.json"
     },
     {
@@ -157,9 +151,15 @@
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "c7c177bd9981af6ba9d80d7d3124c56c6894cf1ec6d462033ed6c88e23fb7ba0",
-      "bytes": 11003,
-      "lines": 58
+      "sha256": "6d0a336b1c28b96f236de8ba010cf56d6513271d367c76b09b5aeae74717f049",
+      "bytes": 11000,
+      "lines": 60
+    },
+    {
+      "path": "项目文档/SOURCE_REVIEW.json",
+      "sha256": "a637e3dcaab756946f1ac0c6e74a8bd70e8c51ddeec4a64a54097e0a0e0b41b5",
+      "bytes": 20859,
+      "lines": 639
     },
     {
       "path": "项目文档/VALIDATION.md",

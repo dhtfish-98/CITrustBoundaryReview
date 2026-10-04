@@ -21,7 +21,7 @@ ci-trust-boundary-review = "ci_trust_boundary_review.cli:main"
 where = ["src"]
 
 [tool.setuptools.data-files]
-"share/ci-trust-boundary-review" = ["项目文档/README.md", "项目文档/ORIGIN.md", "项目文档/DEFENSIVE_SCOPE.md", "项目文档/NOTICE", "项目文档/VALIDATION.md", "SOURCE_REVIEW.json", "runtime.lock", "SOURCE_REVIEW_MANIFEST.json"]
+"share/ci-trust-boundary-review" = ["项目文档/README.md", "项目文档/ORIGIN.md", "项目文档/DEFENSIVE_SCOPE.md", "项目文档/NOTICE", "项目文档/VALIDATION.md", "项目文档/SOURCE_REVIEW.json", "runtime.lock", "SOURCE_REVIEW_MANIFEST.json"]
 
 [tool.ruff]
 line-length = 100
