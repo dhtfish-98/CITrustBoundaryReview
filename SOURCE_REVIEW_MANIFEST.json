@@ -8,6 +8,12 @@
   "runtime_review": "Own runtime unchanged except existing version metadata; current source/package inventories and required notice bytes checked. Upstream read scope remains bounded in ORIGIN.md.",
   "files": [
     {
+      "path": "Build/.gitignore",
+      "sha256": "240a3e0d37d2e86b614063f5347eb02d4f99ca6c254de6b82871ff8d95532a7d",
+      "bytes": 14,
+      "lines": 2
+    },
+    {
       "path": ".github/workflows/verify.yml",
       "sha256": "48e9a9fda5ff1a918347b876c6acc32ce456f723c4d999a5761dc7889f22d07e",
       "bytes": 2518,
