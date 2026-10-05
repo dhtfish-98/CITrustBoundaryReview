@@ -3,7 +3,7 @@
 # CITrustBoundaryReview
 
 
-New implementation author: **dhtfish98**. Current project version: **0.1.2**.
+New implementation author: **dhtfish98**. Current project version: **0.1.3**.
 
 A new bounded offline static analyzer for the `ctbr-1` workflow trust-boundary contract. It reads one explicitly supplied local GitHub Actions workflow. It parses YAML events and GitHub expression syntax, then follows declared values through ordered steps, job dependencies, environment bindings, output files and artifact declarations. It does not run the workflow.
 

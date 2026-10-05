@@ -1,11 +1,11 @@
 {
   "schema": "current-formal-source-manifest/v1",
   "project": "CITrustBoundaryReview",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "new_implementation_author": "dhtfish98",
   "new_implementation_maintainer": "dhtfish98",
   "baseline_commit": "89c99fe35ba1689d62adb5120f86b61da0233109",
-  "runtime_review": "Own runtime unchanged except existing version metadata; current source/package inventories and required notice bytes checked. Upstream read scope remains bounded in ORIGIN.md.",
+  "runtime_review": "Own parser and policy behavior unchanged; version metadata updated for this patch. Current source and package inventories and retained notice bytes are checked. Upstream read scope remains bounded in ORIGIN.md.",
   "files": [
     {
       "path": "Build/.gitignore",
@@ -51,7 +51,7 @@
     },
     {
       "path": "pyproject.toml",
-      "sha256": "8b36419d69d8c66cee3d0f169cffaa2d105729425933eac2e56c044fa81370fc",
+      "sha256": "3dbe7a86b9ee9dd61686756e2bca5685cb4ba71ba71b4bdf10736944287dce37",
       "bytes": 990,
       "lines": 31
     },
@@ -63,7 +63,7 @@
     },
     {
       "path": "src/ci_trust_boundary_review/__init__.py",
-      "sha256": "9acb3a371a0e943c7f1de09f86d5a3df30d04d0fb6941ae0686f473fd6dce262",
+      "sha256": "8e5d31d218b8f92d53de1b3a12f4976965cccf28784cec15a4d408e9c25ea8cc",
       "bytes": 206,
       "lines": 7
     },
@@ -127,7 +127,7 @@
       "path": "构建.py"
     },
     {
-      "sha256": "bf0b5943bda2484097a8eddc53cd255d9de9a938cf7a79946694b141ebd9dfb2",
+      "sha256": "6d2544c31741238bab06926d2e42ad5c56c05146591161b2fecbf7025280e03b",
       "bytes": 1463,
       "path": "构建配置.json"
     },
@@ -145,7 +145,7 @@
     },
     {
       "path": "项目文档/NOTICE",
-      "sha256": "341b9d1116d96b1194d30b4b7c0f8ab8d9ab33cd395eabea843b62bdd400bb3f",
+      "sha256": "81e1ab4f0c8605a8cb39208dd85b001a05306a7751a70743d65dc7bca4f797ef",
       "bytes": 673,
       "lines": 11
     },
@@ -157,7 +157,7 @@
     },
     {
       "path": "项目文档/README.md",
-      "sha256": "6d0a336b1c28b96f236de8ba010cf56d6513271d367c76b09b5aeae74717f049",
+      "sha256": "ed51cd1fc97d84a700e4756dfc2924d85da412ad43015eeb2320cad4db3e9969",
       "bytes": 11000,
       "lines": 60
     },
@@ -169,9 +169,9 @@
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "850de1473f4b3ba17fdb5c757264522a6754fdff4ae6ea55d04fe3cc2564efa0",
-      "bytes": 5774,
-      "lines": 55
+      "sha256": "efafba88bd654fde7cbc3f49acc45c495d53fab57c61285dc1cbb0d9b0422d2f",
+      "bytes": 6639,
+      "lines": 61
     },
     {
       "sha256": "c1592b0528cbda8f4ce94a95eee7ca859a6b0aac54753e1a85f3b9d9e6aad534",
@@ -191,6 +191,6 @@
     "original_inventory": "项目文档/历史/目录更新20261003/SOURCE_REVIEW_MANIFEST.json.public-83980d9e81b3.json",
     "original_inventory_sha256": "c1592b0528cbda8f4ce94a95eee7ca859a6b0aac54753e1a85f3b9d9e6aad534",
     "path_view": "Canonical repository paths; the builder also restores byte-identical legacy aliases under ignored Build for existing packaging checks",
-    "scope": "Current file inventory and packaging paths only; runtime bytes/version/API unchanged. Historical validation and security conclusions are retained, not rerun or newly certified."
+    "scope": "Current file inventory and packaging paths; only version identifiers changed in the runtime. Historical validation and security conclusions are retained, not rerun or newly certified."
   }
 }

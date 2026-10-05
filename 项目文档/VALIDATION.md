@@ -1,4 +1,10 @@
-# Current delivery validation — 0.1.2
+# Current delivery validation — 0.1.3
+
+This patch release aligns the public wheel/source-package layout with the already committed `Build` and `项目文档` directories. The defensive parser and policy behavior are unchanged; only the package version identifier and publication metadata change in the runtime. Third-party notices that apply to retained reference or redistributed material remain in place.
+
+The current file inventory is `SOURCE_REVIEW_MANIFEST.json` (self-digest excluded). The GitHub Actions workflow builds and exercises the source on its declared matrix; only an exact-commit successful run and release assets bound to that commit establish this version’s hosted result. Earlier test counts and artifact claims below belong to earlier versions. Engineering checks do not establish applicant identity, safeguard impact or CVP admission.
+
+# Historical delivery validation — 0.1.2
 
 New implementation author and maintainer: dhtfish98. This patch removes only source-reference or unbundled-dependency notice copies identified as unused. Licenses/notices associated with redistributed material and specific OPEN applicability questions are retained byte-for-byte. The new own runtime differs only in version metadata; parser and policy behavior are unchanged.
 
