@@ -323,6 +323,44 @@ class Workflows(unittest.TestCase):
         r = review(workflow(text.replace("bash ./inert.sh", "echo hello")))
         self.assertNotIn("privileged_workspace_execution", self.rules(r))
 
+    def test_inline_secret_privileges_untrusted_workspace_execution(self):
+        checkout = "- uses: actions/checkout@v4\n"
+        direct = review(
+            workflow(
+                checkout + '- run: ./inert.sh "${{ secrets.GITHUB_TOKEN }}"',
+                "pull_request",
+            )
+        )
+        self.assertEqual(direct["status"], "FAIL")
+        self.assertEqual(direct["open_reasons"], [])
+        self.assertEqual(self.rules(direct), {"privileged_workspace_execution"})
+
+        via_env = review(
+            workflow(
+                checkout
+                + "- env:\n    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}\n"
+                + '  run: ./inert.sh "$GH_TOKEN"',
+                "pull_request",
+            )
+        )
+        self.assertEqual(self.rules(via_env), {"privileged_workspace_execution"})
+
+        data_only = review(
+            workflow(checkout + '- run: echo "${{ secrets.GITHUB_TOKEN }}"', "pull_request")
+        )
+        self.assertEqual(data_only["status"], "PASS")
+        self.assertNotIn("privileged_workspace_execution", self.rules(data_only))
+        no_secret = review(workflow(checkout + "- run: ./inert.sh", "pull_request"))
+        self.assertEqual(no_secret["status"], "PASS")
+        self.assertFalse(no_secret["findings"])
+        trusted_checkout = review(
+            workflow(
+                checkout + '- run: ./inert.sh "${{ secrets.GITHUB_TOKEN }}"',
+                "pull_request_target",
+            )
+        )
+        self.assertNotIn("privileged_workspace_execution", self.rules(trusted_checkout))
+
     def test_default_checkout_event_scenarios_do_not_cross_contaminate(self):
         r = review(
             workflow(

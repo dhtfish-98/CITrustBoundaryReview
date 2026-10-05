@@ -3,7 +3,7 @@
 # CITrustBoundaryReview
 
 
-New implementation author: **dhtfish98**. Current project version: **0.1.3**.
+New implementation author: **dhtfish98**. Current project version: **0.1.4**.
 
 A new bounded offline static analyzer for the `ctbr-1` workflow trust-boundary contract. It reads one explicitly supplied local GitHub Actions workflow. It parses YAML events and GitHub expression syntax, then follows declared values through ordered steps, job dependencies, environment bindings, output files and artifact declarations. It does not run the workflow.
 
@@ -35,7 +35,7 @@ The nine frozen rules are:
 | `environment_to_eval` | Arbitrary tracked data passed to a selected shell/interpreter code argument |
 | `artifact_to_execution` | A tracked artifact code origin later consumed by selected workspace execution |
 
-One sink chooses its most specific output/environment channel rule rather than counting the same interpolation under every rule. Different event scenarios are analyzed separately. `pull_request_target` and `workflow_run` provide potentially privileged context; their presence alone creates no finding. Declared write permissions, a job environment and a modeled secret binding can also provide context. Permission strength, least privilege, action pin quality and secret contents are expressly not checked. A simple modeled labeler workflow can PASS this finite contract without establishing the labeler's provenance or complete safety.
+One sink chooses its most specific output/environment channel rule rather than counting the same interpolation under every rule. Different event scenarios are analyzed separately. `pull_request_target` and `workflow_run` provide potentially privileged context; their presence alone creates no finding. Declared write permissions, a job environment and a modeled secret binding can also provide context. A secret interpolated directly into a `run` script counts as a sensitive binding when that script executes checked-out code. A modeled data-only command with sensitive text does not itself trigger `privileged_workspace_execution`. Permission strength, least privilege, action pin quality and secret contents are expressly not checked. A simple modeled labeler workflow can PASS this finite contract without establishing the labeler's provenance or complete safety.
 
 Expressions are parsed by a new bounded lexer and precedence parser: literals, single-quote escaping, dotted or literal-string indexed contexts, parentheses, `!`, comparisons, `&&`, `||`, and the explicitly enumerated built-in functions. Comparisons and boolean-returning functions produce fixed booleans; `&&` and `||` preserve operand-returning flow. `format`, `join` and `toJSON` preserve arbitrary content. `fromJSON`, wildcard/computed access and unresolved contexts remain OPEN. No arbitrary expression is evaluated as Python, JavaScript or shell code. Constant booleans can suppress a statically disabled step; dynamic conditions are retained as possible execution and OPEN rather than accepted as proven security guards.
 

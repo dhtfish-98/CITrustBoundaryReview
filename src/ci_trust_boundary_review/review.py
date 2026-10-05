@@ -554,6 +554,9 @@ class Review:
                 run = sf["run"]
                 flow, substitutions = self.template(run, step_env, outputs, defaults, needs)
                 self.sink(run, flow)
+                # A secret interpolated directly into run is available to the
+                # executed workspace program even without an env declaration.
+                run_privileged = step_privileged or flow.sensitive
                 shell = scalar(sf.get("shell")) or ("bash" if linux_default else "unknown")
                 if shell not in ("bash", "sh") or "working-directory" in sf:
                     self.opened("shell_or_working_directory_not_resolved")
@@ -570,7 +573,7 @@ class Review:
                             self.finding("environment_to_eval", run, argument)
                         if argument.unknown:
                             self.opened("unresolved_shell_code_argument")
-                    if result.workspace_exec and workspace.code and step_privileged:
+                    if result.workspace_exec and workspace.code and run_privileged:
                         rule = (
                             "artifact_to_execution"
                             if "artifact" in workspace.channels

@@ -12,6 +12,8 @@ The only runtime dependency is the trusted parser `PyYAML==6.0.3`, downloaded fr
 
 Code and documents were produced under repository-owner direction and local automated/independent review as reported in VALIDATION.md. This statement does not establish unaided human authorship, independent human review, identity or CVP approval. New-code MIT attribution is separate from retained upstream authorship; no claim is made that the original authors wrote or endorsed this implementation.
 
+The 0.1.4 maintenance fix and regression cases were prepared with an automated coding assistant under repository-owner direction. Package author and maintainer metadata identify dhtfish98; they do not claim unaided human authorship of this patch. The original zizmor and separate PyYAML attribution remains distinct.
+
 New implementation author: dhtfish98. This attribution applies to the new project implementation; original sources, licenses and third-party notices retain their authors. Automated checks do not establish independent human review or CVP eligibility.
 
 ## Current distribution and reference boundary

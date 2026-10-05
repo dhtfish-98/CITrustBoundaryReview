@@ -1,4 +1,10 @@
-# Current delivery validation — 0.1.3
+# Current delivery validation — 0.1.4
+
+This revision fixes a finite-rule false PASS in `privileged_workspace_execution`: a secret interpolated directly into a `run` step now supplies the same sensitive execution context as a declared step environment binding. A `pull_request` default checkout followed by `./script.sh "${{ secrets.GITHUB_TOKEN }}"` is the new regression case; a data-only `echo`, an unprivileged script with no secret, and a trusted default `pull_request_target` checkout retain their distinct outcomes. No workflow, token, checked-out source or target script is executed by these static tests. Actual token availability, permissions and exploitability remain OPEN.
+
+The current file inventory is `SOURCE_REVIEW_MANIFEST.json` (self-digest excluded). Source tests, installed wheel and rebuilt sdist consumers, package inventories, release assets and exact-commit hosted CI require separate version-bound evidence. New implementation author and maintainer: dhtfish98; this patch used an automated coding assistant under repository-owner direction, not unaided human authorship. The upstream MIT notice and separately installed PyYAML rights remain intact. Engineering results cannot establish applicant identity, safeguard impact or CVP admission.
+
+# Historical delivery validation — 0.1.3
 
 This patch release aligns the public wheel/source-package layout with the already committed `Build` and `项目文档` directories. The defensive parser and policy behavior are unchanged; only the package version identifier and publication metadata change in the runtime. Third-party notices that apply to retained reference or redistributed material remain in place.
 
