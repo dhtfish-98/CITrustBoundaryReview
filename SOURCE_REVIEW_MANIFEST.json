@@ -128,7 +128,7 @@
       "lines": 129
     },
     {
-      "sha256": "2f68881a26e94e5a8850a77fe37654d30e28e40ccf576d7907ee012e37e7fbad",
+      "sha256": "3f9e2b99cb12b0db121d54a47cc4635886b7f8bbe78b06e614ad98cd40e8b792",
       "bytes": 1463,
       "path": "构建配置.json",
       "lines": 45
@@ -153,8 +153,8 @@
     },
     {
       "path": "项目文档/ORIGIN.md",
-      "sha256": "1868ee94e708330ee0354b1cf1a6e7a79301d684e225e9042e387fcc7039a18b",
-      "bytes": 4236,
+      "sha256": "2d054c274bac6379599d8facaff7b585f188dccd650627322274e02d66afd302",
+      "bytes": 4281,
       "lines": 21
     },
     {
@@ -171,8 +171,8 @@
     },
     {
       "path": "项目文档/VALIDATION.md",
-      "sha256": "6c626d8de81f1300620eea4df09f48c51be1353f0ab1a8e80cf5dab5be82d489",
-      "bytes": 7910,
+      "sha256": "f34c8deb95626af0a7b9344719ff54d02431b00a8c31bd99eceb66ebd45c7d09",
+      "bytes": 7967,
       "lines": 67
     },
     {
